@@ -1,0 +1,62 @@
+.banner {
+    overflow-x: hidden;
+    height: 100vh;
+    background-image: url("../assets/img/banner-bg-min.png");
+    @include bg-styles;
+
+    &__wrapper {
+        position: relative;
+        height: 100vh;
+        color: $white-color;
+    }
+
+    &__content {
+        & .discriptor{
+            margin-bottom: 50px;
+        }
+        & .lg-text{
+            line-height: 5px;
+        }
+        &-link {
+            position: relative;
+            width: 307px;
+            color: $white-color;
+            text-decoration: none;
+
+            span {
+                position: absolute;
+                width: 300px;
+                bottom: 10px;
+                left: 50px;
+                z-index: 1;
+                font-size: 18px;
+                line-height: 25px;
+            }
+
+            &:hover {
+                svg{
+                    fill: $secondary-hover-color;
+                    transition: .5s;
+                }
+            }
+        }
+    }
+
+    &__social {
+        position: absolute;
+        bottom: 38px;
+        z-index: 1;
+
+        &-list {
+            gap: 20px;
+        }
+
+        &-link {
+            color: $white-color;
+
+            &:hover {
+                @include link-hover;
+            }
+        }
+    }
+}

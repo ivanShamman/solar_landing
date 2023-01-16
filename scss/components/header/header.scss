@@ -1,0 +1,15 @@
+.header {
+    position: absolute;
+    width: 100%;
+    margin-top: 70px;
+    z-index: 2;
+
+    &__logo {
+        color: $white-color;
+
+        &:hover {
+            color: $secondary-hover-color;
+            transition: .5s;
+        }
+    }
+}

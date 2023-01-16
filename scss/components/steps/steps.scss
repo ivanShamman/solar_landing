@@ -1,0 +1,15 @@
+.steps{
+    margin: 100px 0;
+    &__description,&__image{
+        width: calc(50% - 45px);
+    }
+    &__list{
+        ul{
+            padding-left: 0;
+            gap: 20px;
+        }
+        &-num{
+            color:$gray-color;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.modal{
+    @media (max-width:676px) {
+        &__content{
+            min-width: 0;
+            padding: 30px;
+        }
+    }
+    @media (max-width:460px) {
+        &__title{
+            h2{
+                font-size: $font-md-size;
+                text-align: center;
+            }
+        }
+    }
+}

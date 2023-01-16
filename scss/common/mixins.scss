@@ -1,0 +1,9 @@
+@mixin bg-styles{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@mixin link-hover{
+    color: $secondary-hover-color;
+    transition: .5s;
+}

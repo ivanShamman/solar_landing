@@ -1,0 +1,100 @@
+.footer {
+    background: url("../assets/img/footer-bg-min.png");
+    @include bg-styles;
+    // background-position: center;
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    padding: 70px 0 49px;
+
+    &__top {
+        margin-bottom: 100px;
+        h2 {
+            color: $white-color;
+        }
+
+        &-col {
+            width: calc(50% - 45px);
+        }
+
+        &-form {
+            gap: 40px;
+
+            label,
+            input {
+                width: 100%;
+            }
+
+            input {
+                background-color: transparent;
+                border: none;
+                border-bottom: 1px solid $white-color;
+                color: $white-color;
+                font-size: $font-sm-size;
+                padding-bottom: 11px;
+
+                &::placeholder {
+                    font-size: $font-sm-size;
+                    color: $white-color;
+                }
+
+                &:hover,
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            &-btn {
+                position: relative;
+                cursor: pointer;
+                background-color: transparent;
+                border: none;
+                color: $white-color;
+                max-width: 193px;
+                text-align: start;
+
+                & span {
+                    position: absolute;
+                    bottom: 10px;
+                    left: 50px;
+                    z-index: 1;
+                    font-size: 18px;
+                    line-height: 25px;
+                }
+                &:hover {
+                    svg{
+                        fill: $secondary-hover-color;
+                        transition: .3s;
+                    }
+                }
+            }
+        }
+        &-contact{
+            gap: 40px;
+            font-size: 18px;
+            color: $white-color;
+        }
+        &-list{
+            gap: 15px;
+            a{
+                color: $white-color;
+                text-decoration: none;
+                &:hover{
+                    @include link-hover;
+                }
+            }
+        }
+    }
+
+    &__bottom{
+        a{
+            color: $white-color;
+            text-decoration: none;
+            &:hover{
+                @include link-hover;
+            }
+        }
+        &-social{
+            gap: 20px;
+        }
+    }
+}

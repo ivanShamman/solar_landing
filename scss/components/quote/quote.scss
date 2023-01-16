@@ -1,0 +1,16 @@
+.quote {
+    height: 500px;
+    background-image: url("../assets/img/quote-bg-min.png");
+    @include bg-styles;
+    display: flex;
+    align-items: center;
+
+    &__text {
+        max-width: 657px;
+        color: $white-color;
+        font-weight: 400;
+        font-size:$font-xl-size;
+        line-height: 57px;
+        text-align: center;
+    }
+}

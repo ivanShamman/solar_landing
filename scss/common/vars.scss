@@ -1,0 +1,17 @@
+$main-font-family:'Noto Sans', sans-serif;
+
+$font-xxl-size:64px;
+$font-xl-size:42px;
+$font-lg-size:24px;
+$font-md-size:18px;
+$font-sm-size:14px;
+
+$gray-color:#868585;
+$white-color: #FFFFFF;
+$black-color:#303030;
+$hover-color:#A9A32A; 
+$secondary-hover-color:#e2d92e;
+
+$container-size:1199px;
+$padding-x-offset:15px;
+$container-width: calc($container-size + calc($padding-x-offset * 2));

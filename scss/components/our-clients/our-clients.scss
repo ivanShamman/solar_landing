@@ -1,0 +1,85 @@
+.our-clients {
+    margin: 100px 0;
+
+    &__carousel {
+        &-item {
+            &.show {
+                display: flex;
+                animation-name: anim-fade;
+                animation-duration: 2s;
+            }
+
+            display: none;
+            margin-bottom: 45px;
+
+            &-col {
+                width: calc(50% - 45px);
+
+                img {
+                    width: 100%;
+                }
+
+                h3 {
+                    margin-bottom: 30px;
+                }
+
+                ul {
+                    margin-left: 51px;
+                    gap: 15px;
+                    margin-bottom: 65px;
+                }
+            }
+
+        }
+    }
+
+    &__link {
+        position: relative;
+        width: 307px;
+        color: $black-color;
+        text-decoration: none;
+
+        span {
+            position: absolute;
+            width: 300px;
+            bottom: 15px;
+            left: 50px;
+            z-index: 1;
+            font-size: $font-md-size;
+            line-height: 25px;
+        }
+
+        &:hover {
+            svg {
+                fill: $secondary-hover-color;
+                transition: .5s;
+            }
+        }
+    }
+
+    &__carousel-btn {
+        &-wrapper {
+            gap: 35px;
+
+            a {
+                color: $black-color;
+
+                &:hover {
+                    @include link-hover;
+                    // color: $secondary-hover-color;
+                    // transition: .5s;
+                }
+            }
+        }
+    }
+}
+
+@keyframes anim-fade {
+    0% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

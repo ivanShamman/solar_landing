@@ -1,0 +1,83 @@
+//DONE
+body {
+    font-family: $main-font-family;
+    font-size: $font-sm-size;
+    font-weight: 400;
+    color: $black-color;
+    
+    &.lock {
+        overflow: hidden;
+    }
+}
+
+main {
+    overflow: hidden;
+}
+
+.container {
+    max-width: $container-width;
+    padding: 0 $padding-x-offset;
+    margin: 0 auto;
+
+    @media (max-width:1229px) {
+        max-width: 1024px;
+    }
+
+    @media (max-width:1024px) {
+        max-width: 992px;
+    }
+
+    @media (max-width:992px) {
+        max-width: 768px;
+    }
+}
+
+.section-title {
+    color: $gray-color;
+    margin-bottom: 50px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.aline-center {
+    align-items: center;
+}
+
+.hero {
+    font-size: $font-xxl-size;
+    font-weight: 700;
+}
+
+.discriptor {
+    font-size: $font-xl-size;
+}
+
+h2 {
+    font-size: $font-lg-size;
+}
+
+h3 , .lg-text {
+    font-size: $font-md-size;
+}
+
+.w-100 {
+    width: 100%;
+}

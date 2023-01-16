@@ -1,0 +1,15 @@
+.quote {
+    @media (max-width:768px) {
+        height: 380px;
+        &__text {
+            max-width: 480px;
+            font-size: 28px;
+            line-height: 42px;
+        }
+    }
+    @media (max-wdith:480px) {
+        &__text{
+            font-size: $font-lg-size;
+        }
+    }
+}

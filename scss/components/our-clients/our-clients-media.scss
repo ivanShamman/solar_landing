@@ -1,0 +1,43 @@
+.our-clients{
+    @media (max-width:1229px) {
+        &__carousel-item{
+            &-col{
+                h3,ul{
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+    @media (max-width:992px) {
+        &__carousel-item{
+            &-col{
+                height: 333px;
+                img{
+                    height: 100%;
+                    width: 150%;
+                }
+                ul{
+                    margin-left: 0;
+                }
+            }
+        }
+
+    }
+    @media (max-width:768px) {
+        &__carousel-item{
+            flex-direction: column;
+            gap: 30px;
+            &-col{
+                width: 100%;
+                height: auto;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        &__link span{
+            font-size: 16px;
+            width: 230px;
+        }
+    }
+}
